@@ -69,9 +69,61 @@
     }
     
 
-/* .logo_nav {
-margin-left: px;
-    } */
+#logo_01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    } 
+
+#main_wooder {
+        display: flex;
+        align-items: center;
 
 
+}
 
+#main_wooder{
+        color: #bea67c;
+        font-family: "Proxima Nova";
+        font-size: 100px;
+        font-weight: 700;
+        line-height: 99.96px;
+        text-transform: uppercase;
+        letter-spacing: 20.01px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        margin-top: 136px;
+        } 
+
+
+#button_learn{
+
+        color: #ffffff;
+        font-family: "Proxima Nova";
+        font-size: 14px;
+        font-weight: 700;
+     
+        text-transform: uppercase;
+        letter-spacing: 2.8px;
+
+        width: 307px;
+        height: 58px;
+        border: 2px solid #ffffff;
+        border-radius: 0rem;
+
+        
+        align-items: center;
+        margin-top: 24px;
+}
+
+#scroll_dawn{
+    margin-top: 64px;
+}
+
+.footer{
+    height: 3000px;;
+}

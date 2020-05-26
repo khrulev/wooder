@@ -15,7 +15,7 @@
         <div class="header">
             <nav class="navbar navbar-dark ">
                 <!-- <div class="row"> -->
-                    <div class="col-9 col-md-3">
+                    <div class="col-3 col-md-3">
                         <button class="navbar-toggler" type="button" 
                             data-toggle="collapse" 
                             data-target="#navbarToggleExternalContent" 
@@ -32,11 +32,20 @@
                             </ul> 
                         </button>  
                     </div>
-                    <div class="d-none d-lg-block col-md-8 mx-auto">
-                        <img class="logo_nav" src="/scr/img/logo_nav.png" alt="wooder logo">
-                        <a class=" text-nav text-nav2" href="#">Home</a>
-                        <a class=" text-nav text-nav2" href="#">products</a>
-                        <a class=" text-nav text-nav2" href="#">About</a>     
+                    <div class="col-6 d-lg-block col-md-8 mx-auto">
+                        <div class="row">
+                            <div class="col-12 d-md-block col-md-3 mx-auto">
+                            <img class="d-inline logo_nav"" src="/scr/img/logo_nav.png" alt="wooder logo">
+                            </div>
+                            <div class="d-none d-lg-block col-md-9 mx-auto">
+                            <div class="d-inline top_links">
+                                <a class=" text-nav text-nav2" href="#">Home</a>
+                                <a class=" text-nav text-nav2" href="#">products</a>
+                                <a class=" text-nav text-nav2" href="#">About</a>    
+                            </div>
+                        </div>
+                        </div>
+                         
                     </div>
                     <div class="col-3 col-md-1  d-inline">
                         <img class="logo_info text-nav2" src="/scr/img/info.png" alt="info">
@@ -47,10 +56,18 @@
             <div class="jumbotron">         
                 <!-- <div class="container"> -->
                     <div class="row">
-                        <div class="col-9 col-sm-3">
-                            <H1>Hello! </H1>
+                        <div class="d-none d-md-flex col-md-3" id="logo_01">
+                            <img class="logo_01"  src="/scr/img/1_main.png" alt="page 1">
                         </div>
-                        <div class="d-none d-sm-block col-sm-9"></div>
+                        <div class=" col-11 col-md-9" id="main_wooder">
+                            <div class="text">Wooder</div>
+                            <button type="button" class="btn btn-outline-secondary" id="button_learn">learn more
+                                <span>
+                                    <img src="/scr/img/right_arrow.png" alt="more">
+                                </span>
+                            </button>
+                            <img src="/scr/img/mouse_main.png" id="scroll_dawn" alt="scroll dawn">
+                        </div>
                     </div>
                 <!-- </div> -->
             </div>    
