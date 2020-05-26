@@ -23,7 +23,8 @@
 .navbar{
     background: transparent;
     justify-content: space-between;
-   
+   padding-left: 0px;
+   padding-right: 0px;
 } 
 
 .navbar-dark .navbar-toggler {
@@ -58,7 +59,7 @@
 }
 
 .text-nav {
-    margin: 2.5em;
+    margin: 3em;
 }
 
 .logo_nav img {
