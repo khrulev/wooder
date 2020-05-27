@@ -225,6 +225,7 @@ letter-spacing: 3.36px;
 
 position:  absolute;
 top: 0.1em ;
-right: -6.3em;
+/* right: -6.3em; */
+right: -4.1em;
 z-index: 10;
 }
