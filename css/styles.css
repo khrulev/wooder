@@ -35,7 +35,6 @@
     flex-direction: row;
 }
 
-
 .text-nav2 {
     color: #727271;
     font-family: "Proxima Nova"; 
@@ -78,8 +77,6 @@
 #main_wooder {
         display: flex;
         align-items: center;
-
-
 }
 
 #main_wooder{
@@ -101,7 +98,6 @@
 
 
 #button_learn{
-
         color: #ffffff;
         font-family: "Proxima Nova";
         font-size: 14px;
@@ -115,7 +111,6 @@
         border: 2px solid #ffffff;
         border-radius: 0rem;
 
-        
         align-items: center;
         margin-top: 24px;
 }
@@ -126,4 +121,110 @@
 
 .footer{
     height: 3000px;;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#container-01{
+    margin-top: 130px;
+}
+
+.text-nav_main_1{
+    /* Style for "Furniture" */
+    color: #010101;
+    font-family: "Proxima Nova";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 100px;
+    text-transform: uppercase;
+    /* Text style for "Furniture" */
+    letter-spacing: 3.36px;
+}
+
+.text-nav_main_2{
+    /* Style for "Wooder uti" */
+    color: #464646;
+    font-family: "Proxima Nova";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    /* Text style for "W, ooder u" */
+    letter-spacing: 0.38px;
+}
+
+.text-nav_main_3{
+    /* Style for "Learn more" */
+    color: #000000;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 700;
+    
+    margin-top: 25px;
+    text-transform: uppercase;
+    /* Text style for "Learn more" */
+    letter-spacing: 2.8px;
+}
+
+.text-nav_main_4{
+    /* Style for "01." */
+    color: #000000;
+    font-family: "Proxima Nova";
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    letter-spacing: 2.7px;
+
+    position:  absolute;
+    top: -0.8em ; 
+    left: -2em;
+    /* z-index: 10; */
+}
+
+#text-nav_main_4_dot{
+    color: #bea67c;
+}
+
+#long_black_line{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#link_learn_more{
+    vertical-align: top;
+}
+
+#big_F{
+    opacity: 0.07;
+    color: #bea67c;
+    font-family: "Proxima Nova";
+    font-size: 396px;
+    font-weight: 700;
+    line-height: 439.49px;
+    text-transform: uppercase;
+    letter-spacing: 18px;
+
+    position:  absolute;
+    top: -0.8em ;
+    left: -0.3em;
+    z-index: 10;
+}
+
+#big_Furniture{
+opacity: 0.2;
+color: #d0d0d0;
+font-family: "Proxima Nova";
+font-size: 169px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 3.36px;
+
+position:  absolute;
+top: 0.1em ;
+right: -6.3em;
+z-index: 10;
 }
