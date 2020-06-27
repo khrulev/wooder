@@ -23,7 +23,8 @@
                             aria-expanded="false" 
                             aria-label="Toggle navigation">
                             <div class="form-inline">
-                                <span class="navbar-toggler-icon"></span> <div class="text-nav2">menu</div>
+                                <span class="navbar-toggler-icon"></span> 
+                                <!-- <div class="text-nav2">menu</div> -->
                             </div>
                             <ul class="collapse navbar-nav" id="navbarToggleExternalContent">
                                 <li class="nav-item"><a class="nav-link text-nav2" href="#">Home</a></li>
@@ -48,25 +49,28 @@
                          
                     </div>
                     <div class="col-3 col-md-1  d-inline">
-                        <img class="logo_info text-nav2" src="/scr/img/info.png" alt="info">
+                        <a class="logo_info text-nav2" href="#"><img src="/scr/img/info.png" alt="info"></a> 
                         <a class="dropdown-toggle text-nav2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN</a>
                     </div>
                 <!-- </div> -->
             </nav>
-            <div class="jumbotron">         
+            <div class="jumbotron d-none d-md-block">         
                 <!-- <div class="container"> -->
                     <div class="row">
                         <div class="d-none d-md-flex col-md-3" id="logo_01">
                             <img class="logo_01"  src="/scr/img/1_main.png" alt="page 1">
                         </div>
                         <div class=" col-11 col-md-9" id="main_wooder">
-                            <div class="text">Wooder</div>
+                            <div class="text main__wooder d-none d-md-block">Wooder</div>
                             <button type="button" class="btn btn-outline-secondary" id="button_learn">learn more
                                 <span>
                                     <img src="/scr/img/right_arrow.png" alt="more">
                                 </span>
                             </button>
-                            <img src="/scr/img/mouse_main.png" id="scroll_dawn" alt="scroll dawn">
+                            <div class="mouse">
+                                <img  src="/scr/img/mouse_main.png" id="scroll_dawn" alt="scroll dawn">
+                            </div>
+                            
                         </div>
                     </div>
                 <!-- </div> -->
@@ -75,16 +79,16 @@
         <div class="main">
             <div class="container" id="container-01">
                 <div class="row">
-                    <div class="col-5 offset-1">
+                    <div class="col-12 col-md-5 offset-md-1">
                         <div class="row">
-                            <div class="big_letter" id="big_F_pos">f</div>
+                            <div class="big_letter d-none d-lg-block" id="big_F_pos">f</div>
                             <div class="col-2" id="long_black_line">
                                 <img class="" src="/scr/img/main/main_01_long01.png" alt="black line">  
                             </div>
                             <div class="col-8 text-nav_main_1">
                                 Furniture
                             </div>
-                            <div class="big" id="big_Furniture_pos">Furnit</div>
+                            <div class="big d-none d-lg-block" id="big_Furniture_pos">Furnit</div>
 
                         </div>
                         <div class="row">
@@ -114,7 +118,7 @@
                             <img id="main_01_vert" src="/scr/img/main/main_02_vert.png" alt="">  
                         </div> 
                     </div>
-                    <div class="col-5">
+                    <div class="col-12 col-md-5">
                         <img class="img-fluid " src="/scr/img/main/main_01_picture.png" alt="info">    
                     </div>
                 
@@ -122,12 +126,12 @@
             </div>
             <div class="container" id="container-02">
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-12 col-md-5">
                         <img class="img-fluid img-shadow-1 " src="/scr/img/main/main_02_picture.png" alt="info">    
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <div class="row text-nav_main_1_2">
-                            <div class="big_letter" id="big_D_pos">
+                            <div class="big_letter d-none d-lg-block" id="big_D_pos">
                                 d
                             </div>
                             <div class="col-8 text-nav_main_1 line_left">
@@ -136,7 +140,7 @@
                             <div class="col-4 line_right">
                                 <img class="" src="/scr/img/main/main_01_long01.png" alt="black line">  
                             </div>
-                            <div class="big" id="big_Decor_pos">
+                            <div class="big d-none d-md-block" id="big_Decor_pos">
                                 Decor
                             </div>
 
@@ -156,7 +160,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-12  d-none d-md-block">
                                 <div class="text-nav_main_4 text_main_5_position">02
                                     <span id="text-nav_main_4_dot">
                                         .
@@ -164,7 +168,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div class="d-none d-lg-block">
                             <img id="main_02_vert" src="/scr/img/main/main_02_vert.png" alt="">  
                         </div>
                          
@@ -175,26 +179,20 @@
             </div>
             <div class="container" id="container-02">
                 <div class="row" >
-                    <div class="col-12 text-nav_main_1_2" id="logo_01">
-                        wooder – is quality    
-                    </div>
+                    <div class="col-12 text-nav_main_1_2" id="logo_01"><span>wooder – is quality</span></div>
                     <div class="col-12" id="logo_02">
                         <img class="" src="/scr/img/main/main_01_long_hor.png" alt="yellow line">
                     </div>
-                    <div class="col-12 text-nav_main_2" id="logo_01">
-                        We create unique design objects made of rare wood, specially under the order.
-                    </div>
-                    <div class="col-12 text-nav_main_2" id="logo_01">
-                        Look at the short video about our work.
-                    </div>
+                    <div class="col-12 text-nav_main_2" id="logo_01"><span>We create unique design objects made of rare wood, specially under the order.</span></div>
+                    <div class="col-12 text-nav_main_2" id="logo_01">Look at the short video about our work.</div>
                 </div>
             </div>
             <div class="container" id="container-04">
                 <div class="row" >
-                    <div class="col-4">
+                    <div class="col-12 col-md-4">
                         <div class="row" >
                             <div class="col-12 col-center-mr">
-                                <a href="#"><img src="/scr/img/main/main_04_1.png" alt=""></a>
+                                <a class="products" href="#"><img class="img-fluid" src="/scr/img/main/main_04_1.png" alt=""></a>
                             </div> 
                             <div class="col-12 col-center-mr">
                                 <img class="" src="/scr/img/main/main_01_long_hor.png" alt="yellow line">   
@@ -204,10 +202,10 @@
                             </div>    
                         </div>       
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-md-4">
                         <div class="row" >
                             <div class="col-12 col-center-mr" >
-                                <a href="#"><img src="/scr/img/main/main_04_2.png" alt=""></a>
+                                <a class="products" href="#"><img class="img-fluid" src="/scr/img/main/main_04_2.png" alt=""></a>
                             </div> 
                             <div class="col-12 col-center-mr" >
                                 <img class="" src="/scr/img/main/main_01_long_hor.png" alt="yellow line">    
@@ -217,10 +215,10 @@
                             </div>    
                         </div>           
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-md-4">
                         <div class="row" >
                             <div class="col-12 col-center-mr">
-                                <a href="#"><img src="/scr/img/main/main_04_3.png" alt=""></a>
+                                <a class="products img-fluid" href="#"><img class="img-fluid" src="/scr/img/main/main_04_3.png" alt=""></a>
                             </div> 
                             <div class="col-12 col-center-mr">
                                 <img class="" src="/scr/img/main/main_01_long_hor.png" alt="yellow line">    
@@ -237,8 +235,12 @@
                 </div>
             </div>
             <div class="video">
+                
                 <div class="container" id="container-05">
+                    <!-- <img class="myImg" src="../scr/img/main//video_layer.png">  -->
                     <div class="row">
+                        
+                        
                         <div class="col-9">
                             <div class="row">
                                 <!-- <div class="big_letter" id="big_F_pos">f</div> -->
@@ -249,10 +251,10 @@
                                     we Do the design </br> 
                                     of any complexity
                                 </div>
-                                <div class="big" id="big_A_pos">A</div>
+                                <div class="big d-none d-md-block" id="big_A_pos">A</div>
     
                             </div>
-                            <div class="row">
+                            <div class="row d-none d-lg-flex">
                                 <div class="col-2 " id="long_black_line">
                                     <img class="" src="/scr/img/main/main_01_long_hor.png" alt="yellow line">
                                 </div>
@@ -282,12 +284,12 @@
            
             <div class="container" id="container-06">
                 <div class="row">
-                    <div class="big" id="big_about_pos">aboutus</div>
-                    <div class="col-5">
+                    <div class="big" id="big_about_pos d-none d-lg-block">aboutus</div>
+                    <div class="col-12 col-md-5">
                         <img class="img-fluid img-shadow-1 " src="/scr/img/aboutus_pic.png" alt="info">    
                     </div>
                     
-                    <div class="col-5 offset-1">
+                    <div class="col-12 col-md-5 offset-md-1">
                         
                         <div class="row">
                             <div class="col-2" id="long_black_line">

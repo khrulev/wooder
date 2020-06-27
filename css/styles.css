@@ -25,10 +25,17 @@
     justify-content: space-between;
     padding-left: 0px;
     padding-right: 0px;
+    align-items: flex-start;
 } 
+
+#navbarToggleExternalContent{
+    align-items: flex-start;
+}
 
 .navbar-dark .navbar-toggler {
     border: hidden;
+    outline: none;
+    border: none;
 }
 
 #navbar-nav2 {
@@ -54,7 +61,7 @@
     background-size: cover;
     background-position: center center; 
     max-width: 1924px;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .text-nav {
@@ -71,7 +78,7 @@
 #logo_01 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     } 
 
 #logo_02 {
@@ -88,22 +95,89 @@
 }
 
 #main_wooder{
-        color: #bea67c;
-        font-family: "Proxima Nova";
+    color: #bea67c;
+    font-family: "Proxima Nova";
+    /* font-size: 100px; */
+    font-weight: 700;
+    line-height: 99.96px;
+    text-transform: uppercase;
+    letter-spacing: 20.01px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    /* margin-top: 136px; */
+}
+/*  --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px; */
+@media (min-width: 992px) {
+    .main__wooder{
         font-size: 100px;
+        margin-top: 5vh;
+    }
+}
+
+@media (min-width: 768px) { 
+    #main_wooder{
+        font-size: 80px;
+        margin-top: 100px;
+    } 
+
+    .header {
+        background-image: url(../scr/img/bg_main.png);
+        background-size: cover;
+        background-position: center center;
+        max-width: 1924px;
+        height: 100vh;
+    }
+    #container-01 {
+        margin-top: 130px;
+    }
+
+    .big{
+        opacity: 0.2;
+        color: #d0d0d0;
+        font-family: "Proxima Nova";
+        font-size: 169px;
         font-weight: 700;
-        line-height: 99.96px;
         text-transform: uppercase;
-        letter-spacing: 20.01px;
+        letter-spacing: 3.36px;
+    }
 
+    #container-06{
+        margin-top: 130px;
+        margin-bottom: 130px;
+    }
+
+ 
+}
+@media (min-width: 576px) { 
+    #main_wooder{
+        font-size: 60px;
+        margin-top: 50px;
+    } 
+}
+
+
+/* @media (min-width: 50px) { 
+    #container-05{
+        padding-top: 13rem;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         justify-content: center;
+    }
+} */
 
-        margin-top: 136px;
-        } 
 
+#container-05{
+    padding-top: 13rem;
+    display: flex;
+    justify-content: center;
+}
 
 #button_learn{
         color: #ffffff;
@@ -125,7 +199,26 @@
 
 #scroll_dawn{
     margin-top: 64px;
+    animation: scroll_mouse 3s linear infinite;
 }
+
+@keyframes scroll_mouse{
+    0% 
+    {
+        margin-top: 40px
+    }
+    25% 
+    {
+        margin-top: 60px   
+    }
+    50%,100% 
+    {
+        margin-top: 100px    
+    }
+}
+
+
+
 
 .footer{
     background-image: url('../scr/img/footer_bg.png');
@@ -140,12 +233,13 @@
     justify-content: flex-end;
 }
 
-#container-01{
+/* #container-01{
     margin-top: 130px;
-}
+} */
 
 #container-02{
-    margin-top: 200px;
+    margin-top: 10vh;
+    text-align: center;
 }
 
 #container-04{
@@ -154,16 +248,7 @@
     justify-content: center;
 }
 
-#container-05{
-    padding-top: 13rem;
-    display: flex;
-    justify-content: center;
-}
 
-#container-06{
-    margin-top: 130px;
-    margin-bottom: 130px;
-}
 
 #container-07{
     display: flex;
@@ -172,15 +257,19 @@
     text-align: center;
 }
 
-.text-nav_main_1{
-    color: #010101;
-    font-family: "Proxima Nova";
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 100px;
-    text-transform: uppercase;
-    letter-spacing: 3.36px;
-}
+
+    .text-nav_main_1{
+        color: #010101;
+        font-family: "Proxima Nova";
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 100px;
+        text-transform: uppercase;
+        letter-spacing: 3.36px;
+    }
+
+
+
 
 .text-nav_main_1_2{
     margin-top: 30px;
@@ -294,7 +383,7 @@
     opacity: 0.2;
     color: #d0d0d0;
     font-family: "Proxima Nova";
-    font-size: 169px;
+    /* font-size: 169px; */
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3.36px;
@@ -360,12 +449,16 @@
 
     .video {
         margin-top: 6em;
-        background-image: url('../scr/img/main//video_layer.png');
+        background-image: url('../scr/img/main//video_layer.png'); 
         background-size: cover;
         background-position: center center; 
         max-width: 1924px;
         height: 100vh;
+        /* margin-bottom: 6em; */
+        
     }
+
+  
 
     .text-nav_main_video{
         color: #bea67c;
@@ -400,3 +493,35 @@
     .img-shadow-1 {
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
       }
+
+      .text-nav.text-nav2:focus,
+      .text-nav.text-nav2:hover,
+      .dropdown-toggle.text-nav2:focus,
+      .dropdown-toggle.text-nav2:hover,
+      .logo_info.text-nav2:focus,
+      .logo_info.text-nav2:hover
+      {
+        color:rgba(255,255,255,.75);
+        text-decoration: none;
+      }
+
+      .text-nav_main_3:focus,
+      .text-nav_main_3:hover
+
+      {
+        color:rgba(99, 99, 99, 0.75);
+        text-decoration: none;
+      }
+
+      .products img {
+        -moz-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        -webkit-transition: all 1s ease-out;
+        }
+        
+       .products img:hover{
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        }
+
