@@ -7,12 +7,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run lite",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "copyfonts": "copyfiles -f fonts/* dist/fonts",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin scr/img/* --out-dir='dist/scr/img'",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
   "author": "Ivan K.",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "lite-server": "^2.5.4",
+    "rimraf": "^3.0.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
